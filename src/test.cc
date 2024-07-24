@@ -155,10 +155,13 @@ private:
 
   // 可读写事件回调
   void onMessage(const TcpConnectionPtr &conn, Buffer *buf, TimeStamp time) {
-    string m = "服务器端:";
+    string m = "HTTP/1.1 200 OK\r\n"
+                           "Content-Type: application/json\r\n"
+                           "Content-Length: 27\r\n"
+                           "\r\n"
+                           "hello world\r\n";
     std::string msg = buf->retrieveAllAsString();
     m = m + msg;
-    cout << "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM " << msg << endl;
     conn->send(m);
     // 写端   EPOLLHUP =》 closeCallback_
   }
