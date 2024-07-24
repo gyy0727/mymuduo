@@ -1,0 +1,5 @@
+2024-03-26 18:22:13	110109	新线程	0	[INFO]	[system]	/home/muqiu0614/桌面/muduo/src/test.cc:15	 main start cp
+2024-03-26 18:22:13	110109	新线程	0	[INFO]	[system]	/home/muqiu0614/桌面/muduo/src/EventLoop.cc:39	EventLoop created  in thread
+2024-03-26 18:22:13	110109	新线程	0	[INFO]	[system]	/home/muqiu0614/桌面/muduo/src/EPollPoller.cc:62	event 3  add 
+2024-03-26 18:22:13	110118	新线程	0	[INFO]	[system]	/home/muqiu0614/桌面/muduo/src/EventLoop.cc:66	EventLoop  start looping 
+2024-03-26 18:22:13	110118	新线程	0	[DEBUG]	[system]	/home/muqiu0614/桌面/muduo/src/EPollPoller.cc:35	fd total count: 1
